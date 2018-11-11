@@ -54,7 +54,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res) {
           assert.equal(res.status, 200);
-          assert.equal(res.text, 'Board does not exist');
+          assert.equal(res.text, 'No such board');
           done();
         })
       })
@@ -90,7 +90,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res) {
           assert.equal(res.status, 200)
-          assert.equal(res.text, "no such thread");
+          assert.equal(res.text, "No such thread");
           done();
         })
       })
@@ -105,7 +105,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res) {
           assert.equal(res.status, 200)
-          assert.equal(res.text, "incorrect password");
+          assert.equal(res.text, "Incorrect password");
           done();
         })
       })
@@ -120,7 +120,7 @@ suite('Functional Tests', function() {
       })
       .end(function (err, res){
         assert.equal(res.status, 200);
-        assert.equal(res.text, 'success');
+        assert.equal(res.text, 'Success');
         done();
       })
       })
@@ -155,7 +155,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res) {
           assert.equal(res.status, 200)
-          assert.equal(res.text, 'no such board')
+          assert.equal(res.text, 'No such board')
           done();
         })
       })
@@ -169,7 +169,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res) {
           assert.equal(res.status, 200)
-          assert.equal(res.text, 'incorrect thread id')
+          assert.equal(res.text, 'Incorrect thread id')
           done();
         })
       })
@@ -183,7 +183,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res) {
           assert.equal(res.status, 200)
-          assert.equal(res.text, 'successfully reported')
+          assert.equal(res.text, 'Successfully reported')
           done();
         })
       })
@@ -207,7 +207,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res) {
           assert.equal(res.status, 200);
-          assert.equal(res.text, 'thread does not exist');
+          assert.equal(res.text, 'No such thread');
           done();
         })
       })
@@ -222,7 +222,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res) {
           assert.equal(res.status,200);
-          assert.equal(res.text, 'thread does not exist');
+          assert.equal(res.text, 'No such thread');
           done();
         })
       })
@@ -254,7 +254,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res){
           assert.equal(res.status,200);
-          assert.equal(res.text, 'No such thread exists')
+          assert.equal(res.text, 'No such thread')
           done();
         })
       })
@@ -268,7 +268,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res){
           assert.equal(res.status,200);
-          assert.equal(res.text, 'No such thread exists')
+          assert.equal(res.text, 'No such thread')
           done();
         })
       })
@@ -334,7 +334,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err,res){
           assert.equal(res.status, 200);
-          assert.equal(res.text, "successfully reported")
+          assert.equal(res.text, "Successfully reported")
           done();
         })
       })
@@ -386,7 +386,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res) {
           assert.equal(res.status, 200)
-          assert.equal(res.text, 'incorrect password');
+          assert.equal(res.text, 'Incorrect password');
           done();
         })
       })
@@ -402,7 +402,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res) {
           assert.equal(res.status, 200)
-          assert.equal(res.text, 'incorrect password');
+          assert.equal(res.text, 'Incorrect password');
           done();
         })
       })
@@ -418,7 +418,7 @@ suite('Functional Tests', function() {
         })
         .end(function (err, res) {
           assert.equal(res.status, 200)
-          assert.equal(res.text, 'success');
+          assert.equal(res.text, 'Success');
           done();
         })
       })
